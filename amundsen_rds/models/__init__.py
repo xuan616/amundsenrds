@@ -27,7 +27,7 @@ from amundsen_rds.models.tag import Tag
 from amundsen_rds.models.updated_timestamp import UpdatedTimestamp
 from amundsen_rds.models.user import User
 
-__all__ = [
+RDSModel = Union[
     'Application', 'ApplicationTable', 'Badge', 'Cluster',
     'TableColumn', 'ColumnBadge', 'ColumnDescription', 'ColumnStat',
     'Dashboard', 'DashboardBadge', 'DashboardChart', 'DashboardCluster',
@@ -41,7 +41,7 @@ __all__ = [
     'User'
 ]
 
-RDSModel = Union[
+__all__ = [
     'Application', 'ApplicationTable', 'Badge', 'Cluster',
     'TableColumn', 'ColumnBadge', 'ColumnDescription', 'ColumnStat',
     'Dashboard', 'DashboardBadge', 'DashboardChart', 'DashboardCluster',
@@ -52,5 +52,5 @@ RDSModel = Union[
     'TableBadge', 'TableDescription', 'TableFollower', 'TableOwner',
     'TableProgrammaticDescription', 'TableSource', 'TableTag', 'TableTimestamp',
     'TableUsage', 'TableWatermark', 'Tag', 'UpdatedTimestamp',
-    'User'
+    'User', 'RDSModel'
 ]
