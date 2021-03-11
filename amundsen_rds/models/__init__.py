@@ -27,7 +27,7 @@ from amundsen_rds.models.tag import Tag
 from amundsen_rds.models.updated_timestamp import UpdatedTimestamp
 from amundsen_rds.models.user import User
 
-RDSModel = Union['RDSModel', Application, ApplicationTable, Badge, Cluster,
+RDSModel = Union[Application, ApplicationTable, Badge, Cluster,
                  TableColumn, ColumnBadge, ColumnDescription, ColumnStat,
                  Dashboard, DashboardBadge, DashboardChart, DashboardCluster,
                  DashboardDescription, DashboardExecution, DashboardFollower, DashboardGroup,
